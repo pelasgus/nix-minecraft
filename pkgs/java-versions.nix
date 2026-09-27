@@ -62,6 +62,9 @@ rec {
       jdk17
     else if versionOlder minecraftVersion "26.1" then
       jdk21
+    else if versionOlder minecraftVersion "26.2" then
+      jdk25
     else
+      # To be bumped when a new one drops
       jdk25;
 }
